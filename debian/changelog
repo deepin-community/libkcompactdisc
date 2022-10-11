@@ -1,0 +1,323 @@
+libkcompactdisc (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+  * Fix list of installed files.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 18 Aug 2021 08:39:29 +0900
+
+libkcompactdisc (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 15:26:59 +0900
+
+libkcompactdisc (4:20.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.12.0).
+  * Update build dependencies according to the upstream build system:
+    - cmake >= 3.5
+    - Qt >= 5.12
+    - KF5 >= 5.68
+    - drop libkf5coreaddons-dev
+  * Drop kde-l10n migration rules, not needed anymore after 2 stable releases.
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Refresh upstream metadata.
+  * Update project homepage.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 04 Jan 2021 23:59:08 +0100
+
+libkcompactdisc (4:20.08.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Refresh copyright information.
+  * Add bugtracker information to upstream metadata.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 30 Oct 2020 21:34:59 +0100
+
+libkcompactdisc (4:20.08.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.08.2).
+  * Borrow minimal upstream signing key from k3b.
+  * Build with hardening=+all build hardening flag.
+  * Refresh upstream metadata.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 30 Oct 2020 17:59:31 +0100
+
+libkcompactdisc (4:20.08.0-1) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+
+ -- Pino Toscano <pino@debian.org>  Sat, 15 Aug 2020 09:13:29 +0200
+
+libkcompactdisc (4:20.04.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Explicitly add the gettext build dependency.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Add the configuration for the CI on salsa.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 02 Aug 2020 16:19:16 +0200
+
+libkcompactdisc (4:19.08.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Use https for Format in copyright.
+  * Mark libkf5compactdisc5 as Multi-Arch: same.
+  * Bump Standards-Version to 4.4.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 29 Sep 2019 09:14:20 +0200
+
+libkcompactdisc (4:17.08.3-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Add a symbols file for libkf5compactdisc5.
+  * Bump Standards-Version to 4.1.3, no changes required.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 28 Dec 2017 14:05:04 +0100
+
+libkcompactdisc (4:17.08.3-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (17.08.1):
+    - switches to Qt5/KF5 (Closes: #875014)
+  * Bump Standards-Version to 4.1.0.
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump Standards-Version to 4.1.2, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Remove unneeded libkf5kdelibs4support-dev build dependency.
+  * Add needed dependencies for libkf5compactdisc-dev.
+  * Remove extra kde-l10n breaks/replaces, already included in ${kde-l10n:all}.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 18 Dec 2017 10:06:03 +0100
+
+libkcompactdisc (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:04:14 +0000
+
+libkcompactdisc (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:39:21 +0000
+
+libkcompactdisc (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:24:27 +0000
+
+libkcompactdisc (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:23:57 +0000
+
+libkcompactdisc (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:25:38 +0000
+
+libkcompactdisc (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:06:32 +0000
+
+libkcompactdisc (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:50:33 +0000
+
+libkcompactdisc (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:02:46 +0000
+
+libkcompactdisc (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:23:34 +0000
+
+libkcompactdisc (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 20:49:31 +0000
+
+libkcompactdisc (4:16.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 18 May 2016 18:45:13 +0200
+
+libkcompactdisc (4:16.04.0-3~1.gbp849245) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @849245a51178f2a78ed0483ece69b2e20a972762 **
+
+  * Update symbols files
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 26 May 2016 00:32:01 +0200
+
+libkcompactdisc (4:16.04.0-2) unstable; urgency=medium
+
+  * Updated symbols from build logs
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 29 May 2016 02:54:01 -0400
+
+libkcompactdisc (4:16.04.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Update symbols files from buildds logs (4:15.12.0-1).
+  * Update symbols files.
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 23:46:32 +0200
+
+libkcompactdisc (4:15.12.0-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:23:29 +0100
+
+libkcompactdisc (4:15.04.3-1) unstable; urgency=medium
+
+  [ Jeremy Lainé ]
+  * New upstream release (15.04.3).
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+  [ Maximiliano Curia ]
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 30 Aug 2015 19:48:49 +0200
+
+libkcompactdisc (4:4.12.3-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:24:54 +0200
+
+libkcompactdisc (4:4.12.3-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Mar 2014 00:05:52 +0100
+
+libkcompactdisc (4:4.11.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Enable build failures on missing symbols.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * Add abi-compliance-checker info.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 17 Jan 2014 18:57:53 -0300
+
+libkcompactdisc (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 12:17:22 +0100
+
+libkcompactdisc (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove patch upstream_disable-wmlib-on-GNU-Hurd.patch, applied by
+    upstream.
+  * Enable auto tests.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 03 Sep 2013 20:17:07 +0200
+
+libkcompactdisc (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 12:59:14 +0200
+
+libkcompactdisc (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove upstream_cmake-link-to-pthread-when-wmlib-is-used.patch, applied by
+    upstream.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Update vcs fields.
+  * Add myself to uploaders.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 08:26:13 +0200
+
+libkcompactdisc (4:4.10.2-3) experimental; urgency=low
+
+  [ Pino Toscano ]
+  * Instead of just removing the sys/mount.h include from plat_freebsd.c,
+    replace it with sys/statfs.h; replace patch kfreebsd_extra_include.diff
+    with kfreebsd_include.diff.
+  * Backport upstream commit 943938c09e2fe44e5a20804be8ba18e72bc6d730 to
+    properly link to pthread when wmlib is used; the new patch
+    upstream_cmake-link-to-pthread-when-wmlib-is-used.patch replaces patch
+    fix_target_link_libraries.diff.
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 11 Apr 2013 06:43:11 +0000
+
+libkcompactdisc (4:4.10.2-2) experimental; urgency=low
+
+  [ Pino Toscano ]
+  * Backport upstream commit 4d7f2c572dec110ea71eae95f203e057cb4e41e3 to
+    disable wmlib on GNU/Hurd.
+  * Remove an extra include in plat_freebsd.c, which should make libkcompactdisc
+    compile on GNU/kFreeBSD; patch kfreebsd_extra_include.diff.
+  * Update the symbols file for GNU/kFreeBSD and GNU/Hurd.
+
+ -- Sune Vuorela <sune@debian.org>  Mon, 08 Apr 2013 19:21:22 +0000
+
+libkcompactdisc (4:4.10.2-1) experimental; urgency=low
+
+  [ Pino Toscano ]
+  * Initial packaging.
+
+ -- Sune Vuorela <sune@debian.org>  Fri, 05 Apr 2013 21:57:29 +0000
